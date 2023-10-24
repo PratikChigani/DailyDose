@@ -1,45 +1,58 @@
 {
     "status": "ok",
-    "totalResults": 3,
+    "totalResults": 4,
     "articles": [
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "goteborgs-posten",
+                "name": "Göteborgs-Posten"
             },
-            "author": null,
-            "title": "Why do crowds look so low at Cricket World Cup?",
-            "description": "BBC Sport analyses why so many matches at the Cricket World Cup have been poorly attended so far.",
-            "url": "http://www.bbc.co.uk/sport/cricket/67118882",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/1094D/production/_131471976_gettyimages-1707881409.jpg",
-            "publishedAt": "2023-10-20T14:22:22.3004629Z",
-            "content": "Empty stands have been a feature of Cricket World Cup games in India which don't feature the hosts\r\nTwo weeks in and, on the pitch, the Cricket World Cup in India is bubbling away nicely.\r\nShock resu… [+4532 chars]"
+            "author": "Joel Arvidsson",
+            "title": "Larmet om Chat GPT: Kan ”bli en inavlad mutant”",
+            "description": "New York Times vill stoppa ChatGPT: ”Riskerar att bli en inavlad mutant”",
+            "url": "http://www.gp.se/ekonomi/giganternas-kamp-om-ai-s-framtid-1.110942354",
+            "urlToImage": "https://www.gp.se/image/policy:1.113148017:1697882256/image.jpg?f=Wide%26w=1200%26%24p%24f%24w=834285a",
+            "publishedAt": "2023-10-21T11:57:22Z",
+            "content": null
         },
         {
             "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
+                "id": "wired",
+                "name": "Wired"
             },
-            "author": null,
-            "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-            "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-            "publishedAt": "2020-04-27T11:41:47Z",
-            "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+            "author": "Wired",
+            "title": "AI Is Becoming More Powerful—but Also More Secretive",
+            "description": "The companies behind ChatGPT and other popular and powerful AI systems aren’t transparent enough about their training data and how they work, according to a new report from Stanford University.",
+            "url": "https://www.wired.com/story/fast-forward-ai-powerful-secretive",
+            "urlToImage": "https://media.wired.com/photos/6530569afb4b9f0c0fa6025e/191:100/w_1280,c_limit/AI-Black-Box-FF-Business-1472132113.jpg",
+            "publishedAt": "2023-10-19T16:00:00Z",
+            "content": "Nathan Strauss, a spokesperson for Amazon said the company is closely reviewing the index. Titan Text is still in private preview, and it would be premature to gauge the transparency of a foundation … [+2401 chars]"
         },
         {
             "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
+                "id": "axios",
+                "name": "Axios"
             },
-            "author": null,
-            "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-            "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-            "publishedAt": "2020-03-30T15:26:05Z",
-            "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+            "author": "Ashley Gold",
+            "title": "FTC opens probe into ChatGPT maker OpenAI",
+            "description": "The FTC is taking a close look at artificial intelligence.",
+            "url": "https://www.axios.com/2023/07/13/ftc-investigate-openai-chatgpt",
+            "urlToImage": "https://images.axios.com/4Pquux_NPHz9HzAbYhr8HeavP6I=/1366x768/smart/2023/07/13/1689264712075.jpg",
+            "publishedAt": "2023-07-13T16:18:05Z",
+            "content": "The Federal Trade Commission is opening an investigation into ChatGPT maker OpenAI, exploring how the company manages risks, a source familiar with the matter confirms to Axios.\r\nWhy it matters: The … [+626 chars]"
+        },
+        {
+            "source": {
+                "id": "recode",
+                "name": "Recode"
+            },
+            "author": "Vox Staff",
+            "title": "What artificial intelligence is, and how it’s changing our world",
+            "description": "Understand how generative AI tools, like ChatGPT, Stable Diffusion, and DALL-E, are already shaping everything — from text and image generation to how we live and work.",
+            "url": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/ghpMKgJICiZk9Bi_PGJ8LlFP33M=/0x566:6000x3707/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24618050/GettyImages_1483829076.jpg",
+            "publishedAt": "2023-04-28T18:15:39Z",
+            "content": "Artificial intelligence is suddenly everywhere or at least, thats what it seems like to us at Vox. Even in its current form and with its limitations, the tech is already shaping everything from text … [+525 chars]"
         }
     ]
 }
