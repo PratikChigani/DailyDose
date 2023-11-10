@@ -11,43 +11,62 @@ export default class News extends Component {
     };
   }
 
-  getNews = async (url) => {
+  // getNews = async (url) => {
+  //   let data = await fetch(url);
+  //   let parsedData = await data.json();
+  //   this.setState({
+  //     articles: parsedData.articles,
+  //     page: this.state.page,
+  //     totalResults: parsedData.totalResults,
+  //   });
+  // };
+
+  async componentDidMount() {
+    // let url = `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=1`;
+    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=${this.props.pageSize}&page=1`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
       articles: parsedData.articles,
-      page: this.state.page,
       totalResults: parsedData.totalResults,
     });
-  };
-
-  async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=${this.state.page}`;
-    this.getNews(url);
   }
 
   handlePreviousBtnClick = async () => {
-    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=${
-      this.state.page - 1
-    }`;
-    this.getNews(url);
-    this.setState({ page: this.state.page - 1 });
-    // console.log("Previous");
+    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=${
+      this.props.pageSize
+    }&page=${this.state.page - 1}`;
+    // let url = `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=${
+    //   this.state.page - 1
+    // }`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      articles: parsedData.articles,
+      page: this.state.page - 1,
+    });
   };
 
   handleNextBtnClick = async () => {
-    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=${
-      this.state.page + 1
-    }`;
-    this.getNews(url);
-    this.setState({ page: this.state.page + 1 });
-    // console.log("Next");
+    let url = `https://newsapi.org/v2/top-Headlines?country=in&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=${
+      this.props.pageSize
+    }&page=${this.state.page + 1}`;
+    // let url = `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=3e768e74275f424cb172d2818919cedd&pageSize=20&page=${
+    //   this.state.page + 1
+    // }`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      articles: parsedData.articles,
+      page: this.state.page + 1,
+    });
   };
 
   render() {
+    // console.log(`render ${this.state.page} ${this.state.pageSize}`);
     return (
       <div className="container mt-3">
-        <h1 style={{ marginLeft: "400px" }}>DailyDose - Top Headlines</h1>
+        <h1 className="text-center">DailyDose - Top Headlines</h1>
         <hr />
         <div className="row mt-5">
           {this.state.articles.map((element) => {
@@ -78,7 +97,9 @@ export default class News extends Component {
             type="button"
             onClick={this.handleNextBtnClick}
             disabled={
-              this.state.page + 1 > Math.ceil(this.state.totalResults / 20)
+              this.state.page + 1 >
+              Math.ceil(this.state.totalResults / this.props.pageSize)
+              // this.state.page + 1 > 5
             }
             className="btn btn-dark"
           >
